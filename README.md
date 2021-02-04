@@ -8,3 +8,6 @@ La realización de las prácticas se divide en:
 3. [Práctica 3](https://github.com/Carlosma7/DSS/tree/main/Practica3/bpelContent): *Business processes modeling*.
 4. [Práctica 4](https://github.com/Carlosma7/DSS/tree/main/Practica4/mobileshop): *Ubiquitous Systems and Environmental Intelligence*.
 5. [Práctica 5](https://github.com/Carlosma7/DSS/tree/main/Practica5): *OWL and semantic modeling of ontologies for the Semantic Web*.
+
+
+[Ejercicio](https://github.com/Carlosma7/DSS/blob/main/OCL_HotelReservation.pdf): *Especificación de la operación IHotelMgt::makeReservation() en OCL*.
