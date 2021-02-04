@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="logo_desc">Logo de la tienda</string>
+    <string name="reg_but_name">Register</string>
+    <string name="log_but_name">Login</string>
+    <string name="reg_adm_name">Admin</string>
+    <string name="reg_cli_name">Client</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_mobile">New Mobile</string>
+    <string name="logout">Log Out</string>
+    <string name="id_mobile">ID</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="os">OS</string>
+    <string name="color">Color</string>
+    <string name="year">Year</string>
+    <string name="price">Price</string>
+    <string name="save">Save</string>
+    <string name="shopping">Shopping Cart</string>
+    <string name="maps_desc">Ubicación de la tienda</string>
+    <string name="google_maps_key">AIzaSyDJivdJufzK7rSQH-TJMdtcPVNqT6LYaa8</string>
+    <string name="back_store">Back to store</string>
+    <string name="color_sec">Color:</string>
+    <string name="year_sec">Year:</string>
+    <string name="os_sec">OS:</string>
+</resources>
