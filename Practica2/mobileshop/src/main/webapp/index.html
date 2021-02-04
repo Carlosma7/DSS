@@ -1,0 +1,305 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width" />
+
+<title>Mobile Manager</title>
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" href="css/mobiles/mobiles.css" />
+<script type="application/javascript" src="js/jquery.js"></script>
+<script type="application/javascript" src="js/bootstrap/bootstrap.js"></script>
+</head>
+<body>
+	<h1>Mobile Phones</h1>
+	<header></header>
+
+	<div class="visuallyhidden" id="mobile_list_visible">
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h4>Mobiles List</h4>
+				<div id="mobiles_table" class="table table-responsive table-striped"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="visuallyhidden" id="mobile_my_sc_list_visible">
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h4>My Shopping Cart</h4>
+				<div id="mobiles_my_sc_table" class="table table-responsive table-striped"></div>
+			</div>
+			<div id="admin_logout" class="text-center">
+				<form id="formButtonExitCart" method="POST">
+					<button type="submit" class="btn btn-primary">Back to Store</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="visuallyhidden" id="mobile_sc_list_visible">
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<h4>Mobiles List</h4>
+				<div id="mobiles_sc_table" class="table table-responsive table-striped"></div>
+			</div>
+		</div>
+
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<h4>Mobile Adder</h4>
+			<div id="mobile_adder" class="text-center">
+				<form id="formAddMobile" method="POST">
+					
+					<div class="form-row">
+					<div class="col">
+						<label for="brand">Brand</label> 
+						<input
+							type="text" class="form-control" id="brand"
+							aria-describedby="emailHelp" placeholder="Xiaomi">
+					</div>
+					<div class="col">
+						<label for="model">Model</label> 
+						<input
+							type="text" class="form-control" id="model"
+							placeholder="Mi 9t">
+					
+					</div>
+					<div class="col">
+						<label for="os">OS</label> 
+						<input
+							type="text" class="form-control" id="os"
+							placeholder="Android">
+					</div>
+
+					<div class="col">
+						<label for="color">Color</label> 
+						<input
+							type="text" class="form-control" id="color"
+							placeholder="Color">
+					</div>
+					
+					<div class="col">
+						<label for="year">Year</label> 
+						<input
+							type="text" class="form-control" id="year"
+							placeholder="Year">
+					</div>
+					
+					<div class="col">
+						<label for="price">Price</label> 
+						<input
+							type="text" class="form-control" id="price"
+							placeholder="price">
+					</div>
+					</div>
+					<button type="submit"  class="btn btn-primary">Save Mobile</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="visuallyhidden" id="client_register_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<h4>Client Register</h4>
+			<div id="client_register" class="text-center">
+				<form id="formRegisterClient" method="POST">
+					
+					<div class="form-row">
+					<div class="col">
+						<label for="email">Email</label> 
+						<input
+							type="text" class="form-control" id="email">
+					</div>
+					<div class="col">
+						<label for="password">Password</label> 
+						<input
+							type="text" class="form-control" id="password">
+					
+					</div>
+					</div>
+					<button type="submit"  class="btn btn-primary">Register Client</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="visuallyhidden" id="client_login_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<h4>Client Login</h4>
+			<div id="client_login" class="text-center">
+				<form id="formLoginClient" method="POST">
+					
+					<div class="form-row">
+					<div class="col">
+						<label for="email">Email</label> 
+						<input
+							type="text" class="form-control" id="email2">
+					</div>
+					<div class="col">
+						<label for="password">Password</label> 
+						<input
+							type="text" class="form-control" id="password2">
+					
+					</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Login Client</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="visuallyhidden" id="see_shopping_cart_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<div id="select_shopping_cart" class="text-center">
+				<form id="formButtonShoppingCart" method="POST">
+					<button type="submit" class="btn btn-primary">Shopping Cart</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="visuallyhidden" id="logout_cli_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<div id="client_logout" class="text-center">
+				<form id="formButtonLogoutClient" method="POST">
+					<button type="submit" class="btn btn-primary">Logout</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="visuallyhidden" id="admin_register_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<h4>Admin Register</h4>
+			<div id="admin_register" class="text-center">
+				<form id="formRegisterAdmin" method="POST">
+					
+					<div class="form-row">
+					<div class="col">
+						<label for="email">Email</label> 
+						<input
+							type="text" class="form-control" id="email3">
+					</div>
+					<div class="col">
+						<label for="password">Password</label> 
+						<input
+							type="text" class="form-control" id="password3">
+					
+					</div>
+					</div>
+					<button type="submit"  class="btn btn-primary">Register Admin</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="visuallyhidden" id="admin_login_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<h4>Admin Login</h4>
+			<div id="admin_login" class="text-center">
+				<form id="formLoginAdmin" method="POST">
+					
+					<div class="form-row">
+					<div class="col">
+						<label for="email">Email</label> 
+						<input
+							type="text" class="form-control" id="email4">
+					</div>
+					<div class="col">
+						<label for="password">Password</label> 
+						<input
+							type="text" class="form-control" id="password4">
+					
+					</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Login Admin</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="visuallyvisible" id="select_option_reg_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto" style="width: 100%; display: table;">
+			<div id="select_option_reg_adm" class="text-center" style="width: 50%; display: table-cell;">
+				<form id="formButtonRegisterAdmin" method="POST">
+					<button type="submit" class="btn btn-primary">Register Admin</button>
+				</form>
+			</div>
+			<div id="select_option_reg_cli" class="text-center" style="display: table-cell;">
+				<form id="formButtonRegisterClient" method="POST">
+					<button type="submit" class="btn btn-primary">Register Client</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="visuallyvisible" id="select_option_log_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto" style="width: 100%; display: table;">
+			<div id="select_option_log_adm" class="text-center" style="width: 50%; display: table-cell;">
+				<form id="formButtonLoginAdmin" method="POST">
+					<button type="submit" class="btn btn-primary">Login Admin</button>
+				</form>
+			</div>
+			<div id="select_option_log_cli" class="text-center" style="display: table-cell;">
+				<form id="formButtonLoginClient" method="POST">
+					<button type="submit" class="btn btn-primary">Login Client</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="visuallyhidden" id="logout_adm_visible">
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<div id="admin_logout" class="text-center">
+				<form id="formButtonLogoutAdmin" method="POST">
+					<button type="submit" class="btn btn-primary">Logout</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+		<style> 
+  	  #map {
+        height: 100%;
+      }
+     
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	</style> 
+	<div id ="map"> </div> 
+
+	
+	<script type="application/javascript" src="js/mobiles/mobiles.js"></script>
+	<script type="application/javascript" src="js/mobiles/clients.js"></script>
+	<script type="application/javascript" src="js/mobiles/admins.js"></script>
+	<script type="application/javascript" src="js/mobiles/functions.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJivdJufzK7rSQH-TJMdtcPVNqT6LYaa8&callback=initMap"></script>
+	
+</body>
+</html>
